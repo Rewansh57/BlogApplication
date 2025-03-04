@@ -14,4 +14,4 @@ spring:
 
 server:
   port:
-    1010
+    8080
