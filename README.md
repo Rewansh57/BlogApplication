@@ -25,7 +25,7 @@ This API provides the following core functionalities:
 - git and github for version control
 
 
-DataBse Connection settings(application.yml) (postgresql)
+DataBase Connection settings(application.yml) (postgresql)
 **spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/own_app
@@ -43,6 +43,8 @@ DataBse Connection settings(application.yml) (postgresql)
 server:
   port:
     8080**
+
+    
 **Request and Response Examples tested on Postman**
 
 **Create a Blog Post
@@ -122,7 +124,9 @@ Body:
 
   
 URL: PUT /api/blogposts/{id}
+
 Example: PUT /api/blogposts/1
+
 Headers:
 Content-Type: application/json
 Request Body: (Only fields to be updated are provided; others retain their values)
@@ -130,6 +134,7 @@ Request Body: (Only fields to be updated are provided; others retain their value
 {
     "title": "Updated Blog Title"
 }
+
 Response:
 Status: 200 OK
 Body:
